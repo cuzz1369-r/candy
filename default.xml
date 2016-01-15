@@ -6,7 +6,6 @@
            fetch="https://android.googlesource.com" />
 
   <remote  name="github"
-           fetch="https://github.com/CandyRoms"
            review="http://gerrit.bbqdroid.org/"
            revision="c6" />
 
