@@ -5,7 +5,6 @@
            fetch="https://android.googlesource.com" />
 
   <default revision="refs/tags/android-6.0.1_r10"
-           remote="aosp"
            sync-j="4" />
            
   <remote  name="private"
