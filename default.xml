@@ -6,6 +6,7 @@
            fetch="https://android.googlesource.com" />
 
   <remote  name="github"
+           fetch=".."
            review="http://gerrit.bbqdroid.org/"
            revision="c6" />
 
