@@ -1,23 +1,14 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
 
-  <default revision="refs/tags/android-6.0.1_r10"
-           sync-j="4" />
-           
-  <remote  name="private"
-           fetch="ssh://git@github.com" />
-
   <remote  name="github"
-           fetch=".."
-           review="https://github.com"/>
-
-  <default revision="refs/heads/c6"
-           remote="github"
-           sync-c="true"
-           sync-j="4" />
+           fetch="https://github.com/CandyRoms"
+           review="http://gerrit.bbqdroid.org/"
+           revision="c6" />
 
   <remote  name="cd"
            fetch="https://github.com/CandyDevices"
@@ -34,6 +25,10 @@
   <remote  name="tm"
            fetch="https://github.com/themuppets"
            revision="cm-13.0" />
+
+  <default revision="refs/tags/android-6.0.1_r10"
+           remote="aosp"
+           sync-j="4" />
 
   <project path="build" name="build" groups="pdk" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
